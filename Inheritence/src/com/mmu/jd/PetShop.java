@@ -1,17 +1,18 @@
 package com.mmu.jd;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
 public class PetShop {
 	
-	private Pet[] petsForSale;
+	private ArrayList<Pet> petsForSale;
 	
-	public Pet[] getPetsForSale() {
+	public ArrayList<Pet> getPetsForSale() {
 		return petsForSale;
 	}
 
-	public void setPetsForSale(Pet[] petsForSale) {
+	public void setPetsForSale(ArrayList<Pet> petsForSale) {
 		this.petsForSale = petsForSale;
 	}
 
@@ -19,9 +20,9 @@ public class PetShop {
 		
 		Dog dog = null;
 		
-		for(int i = 0; i < this.petsForSale.length; i++) { 
-			if(petsForSale[i] instanceof Dog) {
-				dog = (Dog) petsForSale[i];
+		for(int i = 0; i < this.petsForSale.size(); i++) { 
+			if(petsForSale.get(i) instanceof Dog) {
+				dog = (Dog) petsForSale.get(i);
 			}
 		}
 		
@@ -75,7 +76,7 @@ public class PetShop {
 	
 	
 	void sortPetsByAge() {
-		Arrays.sort(petsForSale, new Comparator<Pet>() {
+		petsForSale.sort(new Comparator<Pet>() {
 
 			@Override
 			public int compare(Pet pet1, Pet pet2) {

@@ -1,5 +1,7 @@
 package com.mmu.jd;
 
+import java.util.ArrayList;
+
 public class main {
 
 	public static void main(String[] args) {
@@ -17,7 +19,11 @@ public class main {
 		
 		PetShop theHouseOfPets = new PetShop();
 		
-		Pet[] petsForSale = {hugo, max, fish};
+		ArrayList<Pet> petsForSale = new ArrayList<>();
+		petsForSale.add(hugo);
+		petsForSale.add(max);
+		petsForSale.add(fish);
+		
 		
 		theHouseOfPets.setPetsForSale(petsForSale);
 		theHouseOfPets.listPets();
