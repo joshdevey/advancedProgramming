@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"BrakingConditions"},{"p":"<Unnamed>","l":"BrakingDistanceEstimator"},{"p":"<Unnamed>","l":"InvalidBrakingConditionsException"},{"p":"<Unnamed>","l":"Main"}];updateSearchResults();
